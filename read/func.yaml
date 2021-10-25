@@ -1,0 +1,5 @@
+schema_version: 20180708
+name: read-products
+version: 0.0.18
+runtime: java
+timeout: 120
