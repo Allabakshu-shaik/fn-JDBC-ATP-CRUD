@@ -73,7 +73,7 @@ public class GetProductFunction {
             query = GET_PRODUCT_INFO;
         }
 
-        List<Product> emps = new ArrayList<>();
+        List<Product> products = new ArrayList<>();
 
         try (PreparedStatement st = conn.prepareStatement(query)) {
             if (!productName.equals("")) {
@@ -83,13 +83,13 @@ public class GetProductFunction {
             ResultSet productRSet = st.executeQuery();
 
             while (productRSet.next()) {
-                emps.add(new Product(productRSet.getString("PRODUCTS_NAME"), productRSet.getInt("PRODUCTS_COUNT")));
+                products.add(new Product(productRSet.getString("PRODUCTS_NAME"), productRSet.getInt("PRODUCTS_COUNT")));
             }
 
         } catch (Exception se) {
             System.err.println("Unable to fetch product info " + se.getMessage());
         }
-        return emps;
+        return products;
     }
 
 }
