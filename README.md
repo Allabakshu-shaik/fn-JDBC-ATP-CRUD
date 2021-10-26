@@ -95,7 +95,7 @@ The second stage of the build process extracts and copies the required Oracle AT
    > fn -v deploy --app fn-oracle-atp-app --build-arg MASTER_PASSWORD=<maven_master_password> --build-arg ORACLE_USERID=<OTN_USERNAME> --build-arg ORACLE_PASSWORD=<OTN_PASSWORD> --all
    >```
 
-e.g. `fn -v deploy --app fn-oracle-atp-app --build-arg MASTER_PASSWORD=foobar --build-arg ORACLE_USERID=abhishek.af.gupta@oracle.com --build-arg ORACLE_PASSWORD=t0ps3cr3t --all`
+e.g. `fn -v deploy --app fn-oracle-atp-app --build-arg MASTER_PASSWORD=foobar --build-arg ORACLE_USERID=*********@oracle.com --build-arg ORACLE_PASSWORD=t0ps3cr3t --all`
 
 
 > Notice the usage of `--all` flag at the end of the `deploy` command. It uses the app name as specified in `app.yaml`
