@@ -1,6 +1,6 @@
 # Integrating Oracle Functions with Oracle Autonomous Transaction Processing
 
-Fn functions executing `CRUD` operations on Oracle ATP. This sample uses a simple `Employee` entity for demonstration purposes 
+Fn functions executing `CRUD` operations on Oracle ATP. This sample uses a simple `product` entity for demonstration purposes 
 
 ##  Oracle ATP setup
 
